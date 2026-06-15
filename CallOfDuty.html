@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call of Duty </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #ffffff;
+        }
+
+        .hero {
+            height: 90vh;
+            background: url(https://static.tweaktown.com/news/9/0/90313_26_report-call-of-duty-2023-will-be-full-game-with-campaign_full.png) center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            transition: .3s;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px red;
+
+        }
+
+        nav {
+            background: #111827;
+            padding: 13px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #eab308;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #111827;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: transform .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+            color: #eab308;
+        }
+
+        .card p {
+            margin: 0 15px 20px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: rgb(2, 6, 23);
+            text-align: center;
+            padding: 20px;
+            color: rgb(156, 163, 175);
+        }
+
+        button {
+            background: orange;
+            border: none;
+            padding: 12px 22px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background: rgb(235, 119, 52);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>CALL OF DUTY</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#join">Join</a>
+    </nav>
+
+    <section id="about">
+        <h2>About the Game</h2>
+        <p>
+            Call of Duty is one of the most popular first‑person shooter game franchises in the world.
+            It features intense multiplayer battles, cinematic campaigns, and realistic weapons.
+        </p>
+    </section>
+
+    <section id="games">
+        <h2>Popular Titles</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" alt="Modern Warfare" />
+                <h3>Modern Warfare</h3>
+                <p>Realistic combat, tactical gameplay, and stunning graphics.</p>
+            </div>
+            <div class="card">
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F02%2Factivision-call-of-duty-warzone-mobile-rumors-000.jpg?w=960&cbr=1&q=90&fit=max"
+                    alt="Warzone" />
+                <h3>Warzone</h3>
+                <p>Free‑to‑play battle royale with massive maps and intense action.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8" alt="Black Ops" />
+                <h3>Black Ops</h3>
+                <p>Fast‑paced gameplay with iconic Zombies mode.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Join the Mission</h2>
+        <p>Ready to enter the battlefield? Click below to enlist.</p>
+        <button onclick="alert('Mission Accepted!')">ENLIST NOW</button>
+    </section>
+
+    <footer>
+        <p>© 2026 Call of Duty Fan Page | Made for learning purposes</p>
+    </footer>
+
+</body>
+
+</html>
